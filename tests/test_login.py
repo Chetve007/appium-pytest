@@ -1,8 +1,8 @@
 import pytest
 
 
-@pytest.mark.login_page
-class TestLoginFunctionality:
+@pytest.mark.login
+class TestLogin:
 
     def test_check_title(self, login_page):
         login_page.login_title_exists()
